@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --sombre-them:#0f172a;
+    --while-letter:#fff;
+    --theme-color-page:#fff;
+    --letter-color:#05bb85;
+    --color-text:#333;
+    --color-hover:#cccccc86;
+}
+body{
+    background-color: var(--theme-color-page);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--sombre-them);
+    flex-direction: column;
+}
+h2{
+    font-size: clamp(16px, 2vw, 27px);
+}
+.contenair{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content nav{
+    height: 80px;
+    width: 88%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: -5px;
+    background-color: var(--theme-color-page);
+    margin-bottom: 10px;
+    z-index: 100000;
+}
+html{
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+nav .logo{
+    width: 80%;
+}
+nav .logo img{
+    width: 130px;
+}
+nav .toggle-theme{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: var(--letter-color);
+    cursor: pointer;
+}
+nav .toggle_menu{
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: var(--letter-color);
+    cursor: pointer;
+}
+.content .content_text{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 80px;
+
+}
+nav .menu{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    right: -10px;
+    width: 0%;
+    height: 97vh;
+    background-color: var(--theme-color-page);
+    top: 80px;
+    margin: 0;
+    overflow: hidden;
+    transition: all .4s;
+    z-index: 1000000000000000000;
+    transform: translateX(20%);
+}
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul{
+    height: 60%;
+    margin-top: 10px;
+}
+.menu ul li{
+    padding-left: 20%;
+}
+nav .menu.active{
+    opacity: 0;
+    width: 50%;
+    opacity: 1;
+    border-left: 2px solid rgba(128, 128, 128, 0.5);
+}
+.direct{
+    transition: transform .4s;
+    margin-left: 5px;
+    transform: translateY(3px);
+}
+.direct.active{
+    transform: rotate(180deg) translateY(-3px);
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    transition: all .3s;
+    opacity: 0;
+    justify-content: space-around;
+    gap:20px;
+}
+nav .menu.active ul{
+    opacity: 1;
+}
+.menu ul li{
+    width: 100%;
+    padding: 15px;
+}
+.menu ul li a{
+    padding: 15px 30px;
+}
+.menu ul li:hover{
+    background-color: var(--color-hover);
+}
+.menu ul .metho.active:hover{
+    background-color: var(--theme-color-page);
+}
+.menu ul .metho1.active:hover{
+    background-color: var(--theme-color-page);
+}
+nav ul li a{
+    color: var(--sombre-them);
+    font-weight: 530;
+    transition: all .3s;
+}
+nav ul li a ion-icon{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+nav ul li a i{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+nav ul li a:hover{
+    color: var(--letter-color);
+}
+nav ul li .sous-metho{
+    position:initial;
+    background-color: initial;
+    width: 100%;
+    height: 0;
+    overflow:initial;
+    top: 35px;
+    border: 0;
+    transition: all .3s;
+}
+nav ul li .sous-metho{
+    position: initial;
+    background-color: var(--theme-color-page);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    top: 35px;
+    border: 0px solid var(--letter-color);
+    transition: all .2s;
+    opacity: 0;
+}
+nav ul li .sous-metho li{
+    padding: 5px 0 0 25px;
+}
+nav ul li .sous-metho li:hover{
+    background-color: var(--color-hover);
+}
+nav ul .metho.active .sous-metho{
+    height: 80px;
+    border-bottom: 1px solid var(--letter-color);
+    opacity: 1;
+    transform: scaleY(1);
+    overflow: visible;
+    margin: 15px 0;
+}
+nav ul li .sous-metho1{
+    position:initial;
+    background-color: var(--theme-color-page);
+    width: 100%;
+    height: 0px;
+    overflow:hidden;
+    top: 35px;
+    border: 0px solid var(--letter-color);
+    transition: all .2s;
+}
+nav ul li .sous-metho1 li{
+    padding: 5px 0 0 25px;
+}
+nav ul .metho1.active .sous-metho1{
+    height: 80px;
+    border: 0;
+    border-bottom: 1px solid var(--letter-color);
+    opacity: 1;
+    transform: scaleY(1);
+    margin: 15px 0;
+}
+.sous-metho>*{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: left;
+}
+.sous-metho1>*{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    padding: 5px;
+    text-align: left;
+}
+.sous-metho>*:hover{
+    background-color: var(--color-hover);
+}
+.sous-metho1>*:hover{
+    background-color: var(--color-hover);
+}
+.sous-metho>*:hover a{
+    color: #05bb85;
+}
+.sous-metho1>*:hover a{
+    color: #05bb85;
+}
+.sous-metho li a{
+    color: var(--sombre-them);
+    width: 100%;
+    height: 20px;
+}
+.sous-metho1 li a{
+    color: var(--sombre-them);
+    width: 100%;
+    height: 20px;
+}
+.content_text .philosophie{
+    width: 100%;
+    padding: 20px 0;
+}
+.philosophie .titre{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--theme-color-page);
+    position: sticky;
+    top: 74px;
+    z-index: 100;
+    padding: 0 0 0 20px;
+}
+.philosophie .titre.active{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5) ;;
+}
+.philosophie .developpement{
+    padding: 20px;
+    color: var(--sombre-them);
+}
+.developpement .etape{
+    padding: 20px;
+}
+.etape .title{
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--color-hover);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 10px;
+    position: relative;
+}
+.etape .sous_etape{
+    padding: 20px;
+    transition: all .3s;
+    max-height: 500vh;
+    overflow: hidden;
+}
+.etape .sous_etape.active{
+    max-height: 0;
+    padding: 0px 20px ;
+}
+.title .btn-toggle{
+    width: 40px;
+    min-height: 100%;
+    background-color: rgba(128, 128, 128, 0.486);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.btn-toggle>*{
+    font-size: 2rem;
+    color: var(--sombre-them);
+}
+.btn-toggle .plus{
+    display: none;
+}
+.btn-toggle.active .moin{
+    display: none;
+}
+.btn-toggle.active .plus{
+    display: block;
+}
+.titre h2{
+    color: var(--sombre-them);
+}
+.vitre{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 75px;
+    right: 10%;
+    z-index: 1000;
+    display: none;
+    transition: all .5s;
+}
+.vitre.active{
+    display: block;
+}
+@media screen and (max-width:800px) {
+    .content{
+        width: 95%;
+    }
+    .content nav{
+        width: 95%;
+    }
+    .philosophie .developpement{
+        padding: 20px 15px;
+    }
+    .developpement .etape{
+        padding: 20px 10px;
+    }
+    .etape .sous_etape{
+        padding: 20px 10px;
+    }
+    html{
+        font-size: 90%;
+    }
+    .etape .sous_etape.active{
+        max-height: 0;
+        padding: 0px 10px ;
+    }
+}
+@media screen and (max-width:1000px) {
+    nav .menu.active{
+        width: 60%;
+    }
+}
+@media screen and (max-width:750px) {
+    nav .menu.active{
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px) {
+    nav .menu.active{
+        width: 80%;
+    }
+}
+@media screen and (max-width:500px) {
+    .philosophie .developpement{
+        padding: 20px 10px;
+    }
+    .developpement .etape{
+        padding: 20px 5px;
+    }
+    .etape .sous_etape{
+        padding: 20px 5px;
+    }
+    .etape .sous_etape.active{
+        max-height: 0;
+        padding: 0px 5px ;
+    }
+    .philosophie .titre{
+        padding: 0;
+    }
+    nav .logo{
+        width: 70%;
+    }
+    nav .menu.active{
+        width: 131%;
+        border: 0;
+      
+    }
+    .content nav{
+        width: 100%;
+    }
+    nav .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu ul{
+        height: 60%;
+        margin-top: 10px;
+    }
+    .menu ul li{
+        padding-left: 10%;
+    }
+}
+@media screen and (max-height:700px) {
+    .menu ul li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .menu ul li a{
+        padding: 10px 30px;
+    }
+}
+@media screen and (max-height:550px) {
+    .menu ul{
+        gap: 10px;
+    }
+    .content nav{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px) {
+    nav .logo{
+        width: 60%;
+    }
+}

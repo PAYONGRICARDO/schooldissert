@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDissert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="argument.css">
+    <link rel="icon" type="image/jpg" href="../logo entete.png">
+    <link rel="stylesheet" href="footer.css">
+    <script src="argument.js" defer></script>
+</head>
+<body>
+    <div class="vitre"></div>
+    <div class="vitrine"></div>
+    <div class="modal">
+        <div class="quitter" onclick="removeModal()">
+            &#215;
+        </div>
+        <div class="modal-head">
+            <div class="img">
+                <div class="logo-modal">
+                    <img src="../logo modal.png" alt="logo de DissertSchool">
+                </div>
+            </div>
+            <div class="title">
+                <h2>COMMENTAIRE</h2>
+            </div>
+        </div>
+        <div class="modal-body">
+            <p>
+                Salut cher utilisateur👋🏽. Pour toute critique, suggestion, difficulté ou incompréhension rencontrée apres exploitation du site, 
+                laissez nous un commentaire par 
+                <a href="mailto:payongtrevor@gmail.com" style="text-decoration: underline;">message mail</a>. 
+            </p>
+        </div>
+        <div class="modal-fin">
+            <button onclick="removeModal()">Fermer</button>
+        </div>
+    </div>
+    <div class="contenair">
+        <div class="content">
+            <nav>
+                <a href="#" class="logo"><img src="../logo pain.png" alt="logo DissertSchool"></a>
+                <div class="menu">
+                    <ul >
+                        <li><a href="../index.html" class="home"><ion-icon name="home-outline"></ion-icon>Acceuil</a></li>
+                        <li><a href="philosophie.html"><ion-icon name="bulb-outline"></ion-icon>Philosophie</a></li>
+                        <li><a href="litteraire.html"><i class="fa-regular fa-clipboard"></i>Litterature</a></li>
+                        <li style="position: relative;" class="metho" onclick="addActive()">
+                            <a href="#"><i class="fa-solid fa-book"></i>Methodologie</a><ion-icon class="direct direct1" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho flex">
+                                <li><a href="methodologie1.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="methodologie2.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;" class="metho1 active" onclick="addActive1()">
+                            <a href="#" ><i class="fa-solid fa-pen"></i>Arguments</a><ion-icon class="direct direct2 active" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho1 flex">
+                                <li><a href="argumentsPhilo.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="argumentLitte.html" style="color: #05BB85;"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+               </div>
+                <div class="toggle_menu">
+                    &#9776;
+                </div>
+                <div class="toggle-theme" onclick="Changetheme()">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+            </nav>
+            <div class="presentation">
+                <div class="image">
+                    <img src="livre.jpg" alt="">
+                </div>
+                <div class="texte">
+                   <div class="texte1">
+                    <div class="title">
+                        <h2>ARGUMENTS <b style="color:#05bb85;">LITTERAIRES</b></h2>
+                      </div>
+                      <div class="box-texte">
+                           <p>
+                                Connaître les arguments littéraires offre une compréhension approfondie de la condition humaine, favorisant l'empathie et la pensée critique. Cela permet d'explorer diverses cultures, de transmettre des valeurs et d'enrichir le vocabulaire. Les œuvres littéraires offrent une évasion plaisante tout en invitant à réfléchir sur des questions existentielles. La littérature nourrit l'imagination, encourageant la créativité, et peut même conduire à une transformation personnelle en offrant de nouvelles perspectives sur la vie.
+                           </p>
+                      </div>
+                      <div class="button">
+                         <button type="button"><a href="#parcourir">PARCOURIR</a></button>
+                      </div>
+                   </div>
+                </div>
+            </div>
+            <div class="content-argument" id="parcourir">
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>L'INUTILITÉ DE LA <b style="color: #05bb85;">LITTERATURE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître les arguments sur l'inutilité de la littérature permet de comprendre les critiques et les perspectives divergentes, encourageant ainsi un débat intellectuel et une remise en question constructive des idées préconçues, favorisant une appréciation plus nuancée et approfondie de la littérature.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Absence d'applications pratiques immédiates : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Contrairement à d'autres formes de connaissances et de compétences, la littérature ne fournit pas toujours des solutions pratiques aux problèmes du monde réel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Déconnexion avec les préoccupations contemporaines : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certaines œuvres littéraires peuvent sembler déconnectées des préoccupations contemporaines, en se concentrant sur des thèmes et des contextes historiques qui ont peu de pertinence pour les lecteurs d'aujourd'hui.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Temps et ressources gaspillés : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Le temps et les ressources consacrés à la lecture de la littérature pourraient être considérés comme gaspillés, surtout si ces ressources pourraient être utilisées de manière plus productive pour d'autres activités.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Perception d'élitisme culturel : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature peut être perçue comme relevant d'une élite culturelle, excluant ainsi ceux qui n'ont pas eu accès à une éducation littéraire formelle ou qui ne partagent pas les mêmes références culturelles.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Inaccessibilité linguistique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature écrite dans des langues spécifiques peut être inaccessible à ceux qui ne maîtrisent pas ces langues, créant ainsi des barrières à la compréhension et à l'appréciation de ces œuvres.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Incompatibilité avec les exigences professionnelles : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Pour certaines personnes, la lecture de la littérature peut sembler incompatible avec les exigences de leur vie professionnelle, en étant perçue comme une activité de loisir plutôt que comme une priorité.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Échec à résoudre les problèmes du monde : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature peut sembler impuissante face aux problèmes urgents et complexes du monde moderne, tels que la pauvreté, la violence et le changement climatique, laissant ainsi certains lecteurs sceptiques quant à son utilité.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Frustration face à la complexité narrative : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certains lecteurs peuvent trouver la complexité narrative de certaines œuvres littéraires frustrante, en les percevant comme des obstacles à une compréhension facile et agréable.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Impact limité sur la vie quotidienne : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature peut sembler avoir un impact limité sur la vie quotidienne des individus, en ne répondant pas directement à leurs besoins pratiques ou à leurs préoccupations immédiates.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Préférence pour des formes de divertissement plus immédiates : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Dans un monde où le divertissement instantané est largement disponible, certains peuvent préférer des formes de divertissement plus immédiates et gratifiantes que la lecture de la littérature.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>L'UTILITÉ DE LA <b style="color: #05bb85;">LITTERATURE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître les arguments sur l'utilité de la littérature élargit la perspective en permettant de reconnaître son rôle dans la transmission de connaissances, l'exploration de l'expérience humaine, la stimulation de l'empathie, la réflexion critique, la créativité, le divertissement et l'enrichissement personnel, renforçant ainsi son importance dans la société.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Exploration de la condition humaine : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature offre une exploration profonde et nuancée de la condition humaine, en mettant en lumière les joies, les peines, les luttes et les triomphes universels qui façonnent l'expérience humaine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Développement de l'empathie : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En permettant aux lecteurs de s'immerger dans les expériences et les perspectives de personnages fictifs, la littérature favorise le développement de l'empathie en encourageant la compréhension et la compassion pour les autres.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Amélioration des compétences linguistiques : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La lecture de la littérature expose les lecteurs à une variété de styles d'écriture et de vocabulaire, ce qui contribue à l'enrichissement de leurs compétences linguistiques en les familiarisant avec différentes formes d'expression.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Stimulation de l'imagination : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature stimule l'imagination en transportant les lecteurs dans des mondes fictifs ou réels où ils peuvent explorer de nouveaux horizons, vivre des aventures excitantes et rencontrer des personnages fascinants.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Fourniture de modèles de comportement : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les personnages de la littérature peuvent servir de modèles de comportement pour les lecteurs, leur offrant des exemples inspirants de courage, d'intégrité, de persévérance et de compassion.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Réflexion sur les questions sociales et politiques : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature aborde une variété de questions sociales et politiques, en offrant aux lecteurs une plateforme pour réfléchir aux problèmes contemporains et aux enjeux de justice, d'égalité et de liberté.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Élargissement des horizons culturels : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature expose les lecteurs à une diversité de cultures, de traditions et de perspectives, en les aidant à comprendre et à apprécier la richesse de la diversité humaine à travers le monde.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Favorisation de la réflexion critique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature encourage la réflexion critique en incitant les lecteurs à analyser et à évaluer les thèmes, les motifs et les messages sous-jacents dans les œuvres qu'ils lisent.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Soulagement du stress et de l'anxiété : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La lecture de la littérature peut offrir un soulagement du stress et de l'anxiété en offrant aux lecteurs une évasion temporaire de leurs soucis quotidiens et en les transportant dans des mondes imaginaires ou réels.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Plaisir esthétique et émotionnel : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        la littérature offre un plaisir esthétique et émotionnel en éveillant une gamme d'émotions chez les lecteurs, en leur procurant du plaisir esthétique grâce à la beauté des mots et à la puissance des histoires qu'elle raconte.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>La realité dans la <b style="color: #05bb85;">LITTERATURE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître les arguments sur la représentation de la réalité dans la littérature permet de comprendre comment elle reflète et interprète le monde, encourageant ainsi une réflexion sur la perception, la vérité subjective, les contextes historiques et culturels, enrichissant ainsi notre compréhension de la condition humaine.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Réflexion de l'expérience humaine : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature offre une représentation variée et profonde de l'expérience humaine, en explorant les émotions, les relations, les défis et les triomphes qui façonnent la vie des individus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Capture de la complexité du monde : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les œuvres littéraires capturent la complexité du monde dans lequel nous vivons, en représentant la diversité des cultures, des perspectives et des expériences qui coexistent dans la société.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Exploration de la subjectivité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature explore la subjectivité de la perception humaine, en offrant des perspectives multiples et souvent contradictoires sur la réalité qui dépendent des points de vue des différents personnages et narrateurs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Remise en question des notions de vérité et de réalité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature remet en question les notions de vérité et de réalité en mettant en lumière la manière dont elles sont façonnées par les perceptions individuelles, les croyances culturelles et les constructions sociales.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Miroir de la société : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature agit comme un miroir de la société, en reflétant les valeurs, les normes, les conflits et les transformations qui caractérisent une époque donnée.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Examen des implications morales et éthiques  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les œuvres littéraires examinent souvent les implications morales et éthiques des actions humaines, en mettant en lumière les dilemmes moraux auxquels les individus sont confrontés dans leur vie quotidienne.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Création de mondes fictifs et réalistes : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature crée à la fois des mondes fictifs imaginaires et des représentations réalistes du monde réel, offrant ainsi aux lecteurs un éventail d'expériences et de possibilités narratives.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Transmission de la mémoire collective : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les œuvres littéraires transmettent la mémoire collective d'une société, en préservant les histoires, les traditions et les valeurs qui façonnent son identité culturelle.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Exploration des limites de la perception humaine : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature explore les limites de la perception humaine, en mettant en évidence les distorsions de la réalité causées par les biais cognitifs, les illusions sensorielles et les constructions mentales.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Stimulation de la réflexion et du dialogue : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En offrant des représentations riches et complexes de la réalité, la littérature stimule la réflexion et le dialogue sur les questions importantes de la vie, de la société et de l'existence humaine.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>Le rÔle de <b style="color: #05bb85;">L'écrivain</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître les arguments sur le rôle de l'écrivain permet de comprendre sa capacité à influencer les idées, les valeurs et les perspectives de la société. Cela favorise une réflexion sur le pouvoir des mots, la responsabilité morale et sociale de l'écrivain, et la contribution de la littérature à la culture et à la compréhension humaine.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Porte-parole de la société : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains ont souvent agi comme des porte-parole de leur époque, reflétant les préoccupations, les valeurs et les défis de la société à travers leurs œuvres littéraires.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Créateur d'univers imaginaires  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains ont le pouvoir de créer des univers imaginaires riches et complexes qui captivent l'imagination des lecteurs, offrant ainsi un échappatoire à la réalité et un espace pour explorer de nouvelles idées et expériences.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Témoin de l'histoire : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains documentent l'histoire et la culture de leur époque à travers leurs écrits, offrant ainsi aux générations futures un aperçu précieux de la vie et des événements de leur temps.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;">Champion des droits de l'homme : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        De nombreux écrivains ont utilisé leur plume pour défendre les droits de l'homme, lutter contre l'injustice sociale et promouvoir la liberté d'expression, faisant ainsi entendre les voix des opprimés et des marginalisés.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;">Explorateur de la condition humaine  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains explorent les complexités de la condition humaine à travers leurs personnages et leurs histoires, offrant ainsi des perspectives profondes sur la nature humaine, ses aspirations, ses peurs et ses contradictions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Agent de changement social  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains ont souvent joué un rôle actif dans la promotion du changement social en sensibilisant le public à des questions importantes telles que la discrimination, la pauvreté et l'injustice, et en incitant à l'action.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Gardien de la culture et de la tradition : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains préservent la culture et la tradition à travers leurs écrits, transmettant ainsi des histoires, des mythes et des valeurs culturelles aux générations futures.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Source d'inspiration et de réflexion : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains inspirent et nourrissent l'imagination des lecteurs, les incitant à réfléchir sur des questions profondes et à envisager de nouveaux horizons, ce qui enrichit leur vie intellectuelle et émotionnelle.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Créateur de beauté et d'émotion : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains créent des œuvres d'art qui évoquent une gamme d'émotions chez les lecteurs, allant de la joie et de l'émerveillement à la tristesse et à la mélancolie, enrichissant ainsi leur expérience esthétique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Constructeur de ponts entre les cultures et les langues : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains qui travaillent dans des contextes multiculturels et multilingues agissent comme des ponts entre différentes cultures et langues, facilitant ainsi la compréhension et l'appréciation mutuelles à travers leurs œuvres traduites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>L'esthétique de la <b style="color: #05bb85;">LITTERATURE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître les arguments sur l'esthétique de la littérature permet d'apprécier sa beauté, sa créativité et son impact émotionnel. Cela encourage une exploration des techniques narratives, des styles d'écriture et des aspects linguistiques, favorisant ainsi une appréciation plus profonde de l'art littéraire et de son influence sur notre expérience esthétique et intellectuelle.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Langage expressif et évocateur : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature utilise un langage riche et expressif pour créer des images mentales vivantes et des émotions intenses chez les lecteurs, faisant ainsi appel aux sens et à l'imagination.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Création d'une atmosphère immersive : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        À travers la description détaillée des lieux, des personnages et des événements, la littérature crée une atmosphère immersive qui transporte les lecteurs dans des mondes imaginaires ou réels.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Exploration de la beauté et de l'émotion : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature explore la beauté esthétique sous toutes ses formes, que ce soit à travers la description de paysages enchanteurs, de moments de grâce ou de l'expression de sentiments profonds et universels.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Usage de la métaphore et de la symbolique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les écrivains utilisent la métaphore, la symbolique et d'autres figures de style pour enrichir leur prose et ajouter des couches de signification et de profondeur à leurs textes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Innovation stylistique et formelle : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certains écrivains expérimentent avec la forme et le style littéraire, créant des œuvres novatrices qui défient les conventions et repoussent les limites de l'expression artistique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;">Équilibre entre forme et contenu : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        L'esthétique de la littérature réside dans l'équilibre entre forme et contenu, où la manière dont une histoire est racontée est aussi importante que ce qui est raconté, créant ainsi une expérience de lecture enrichissante et gratifiante.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Évocation de l'émotion et de la réflexion : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature évoque toute une gamme d'émotions chez les lecteurs, allant de la joie et de l'émerveillement à la tristesse et à la mélancolie, tout en suscitant la réflexion sur des questions importantes de la vie et de l'existence.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Transmission de valeurs et de perspectives : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        À travers les histoires qu'elle raconte et les personnages qu'elle présente, la littérature transmet des valeurs, des perspectives et des idéaux qui influencent la manière dont les lecteurs voient le monde et se voient eux-mêmes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Appréciation de la forme artistique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature est appréciée en tant que forme d'art en elle-même, où chaque mot, chaque phrase et chaque paragraphe sont soigneusement façonnés pour créer une œuvre d'une beauté esthétique singulière.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Impact sur la culture et la société : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature a un impact profond sur la culture et la société en reflétant les valeurs, les croyances et les préoccupations d'une époque donnée, en influençant les idées et les attitudes, et en inspirant la créativité et l'innovation dans d'autres domaines artistiques.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>La temporalité <b style="color: #05bb85;">LITTERATURaire</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître les arguments sur la temporalité littéraire permet de comprendre comment le temps est utilisé dans la narration pour créer des effets de suspense, de réflexion ou de symbolisme. Cela encourage une analyse de la structure narrative, du développement des personnages et des thèmes, enrichissant ainsi notre appréciation de la littérature.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Exploration des perceptions du temps : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature explore les différentes façons dont les individus perçoivent et expérimentent le temps, que ce soit linéaire, cyclique, ou fragmenté, offrant ainsi des perspectives variées sur la temporalité humaine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;">Construction de l'intrigue : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Le temps est un élément clé de la construction de l'intrigue dans la littérature, car il organise la séquence des événements et crée un sens de progression narrative, captivant ainsi l'attention du lecteur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;">Évolution des personnages : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La temporalité littéraire permet aux personnages de se développer et de changer au fil du temps, en explorant les effets du passé sur le présent et les espoirs pour l'avenir, ce qui rend les personnages plus dynamiques et réalistes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Réflexion sur la mémoire  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature examine la manière dont la mémoire façonne notre compréhension du temps, en explorant les souvenirs et les réminiscences qui imprègnent les narrations et influencent les actions des personnages.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Expression des thèmes temporels  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La temporalité littéraire offre un moyen d'explorer des thèmes universels tels que la mortalité, l'éphémère, la nostalgie, et la fuite du temps, offrant ainsi des méditations profondes sur la condition humaine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;">Remise en question des limites temporelles : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certains textes littéraires défient les conventions temporelles en utilisant des techniques telles que les flashbacks, les analepses et les prolepses, remettant ainsi en question les limites traditionnelles entre passé, présent et futur.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Mise en contexte historique et social : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La temporalité littéraire situe les œuvres dans leur contexte historique et social, offrant ainsi un aperçu des changements culturels, politiques et sociaux qui ont façonné une époque donnée.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Jeu avec la perception du temps : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certains écrivains jouent avec la perception du temps en créant des narrations non linéaires ou en manipulant le temps de manière imaginative, offrant ainsi des expériences de lecture innovantes et stimulantes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Création d'atmosphère et de ton : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La temporalité littéraire contribue à créer une atmosphère et un ton spécifiques dans une œuvre, que ce soit en accélérant le rythme pour créer du suspense ou en ralentissant le temps pour souligner l'importance d'un moment particulier.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Réflexion sur l'existence et la temporalité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La littérature permet une réflexion métaphysique sur l'existence et la temporalité, en examinant la manière dont nous nous situons dans le flux du temps et en posant des questions sur notre place dans l'univers en constante évolution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <footer>
+        <div class="bodyfooter">
+            <div class="footer-content">
+                <h3> Contact </h3>
+                <div class="elements" style="height: 50%;">
+                    <p><i class="fa-solid fa-phone"> :</i><a href="tel:+23758193457">  658193457</a></p>
+                    <p><i class="fa-regular fa-envelope"> :</i><a href="mailto:trevorpayong@gmail.com"> trevorpayong@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h3>Commentaire</h3>
+                <p style=" height: 50%;display: flex;justify-content: center;align-items: center; gap: 7px;" class="stop" onclick="AddModal()">
+                    <i class="fa-solid fa-comment-dots" style="color: #000; text-decoration: none;"> :</i>
+                    <b style="color:#0000ee; text-decoration: underline; cursor: pointer;"> Envoyez un commentaire</b>
+                </p>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez nous</h3>
+                <div class="reseau" style="height: 50%; display: flex;justify-content: center;align-items: center;">
+                    <span class="facebook">
+                        <a href="https://web.facebook.com/profile.php?id=61561646186400&is_tour_completed" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                    <span class="instagram">
+                        <a href="https://www.instagram.com/school_dissert1?igsh=MTM3d2JobGxkemQx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 <b style="font-family: cursive;"> PAYONG INTELLECTUAL GROUPS</b> tout droit reserver </p>
+        </div>
+    </footer>
+</body>
+</html>

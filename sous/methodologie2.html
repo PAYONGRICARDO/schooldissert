@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDissert</title>
+    <link rel="stylesheet" href="methodologie.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/jpg" href="../logo entete.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="methodologie.js" defer></script>
+</head>
+<body>
+    <div class="vitre"></div>
+    <div class="vitrine"></div>
+    <div class="modal">
+        <div class="quitter" onclick="removeModal()">
+            &#215;
+        </div>
+        <div class="modal-head">
+            <div class="img">
+                <div class="logo-modal">
+                    <img src="../logo modal.png" alt="logo de DissertSchool">
+                </div>
+            </div>
+            <div class="title">
+                <h2>COMMENTAIRE</h2>
+            </div>
+        </div>
+        <div class="modal-body">
+            <p>
+                Salut cher utilisateur👋🏽. Pour toute critique, suggestion, difficulté ou incompréhension rencontrée apres exploitation du site, laissez nous un commentaire par 
+                <a href="mailto:payongtrevor@gmail.com" style="text-decoration: underline;">message mail</a>.
+            </p>
+        </div>
+        <div class="modal-fin">
+            <button onclick="removeModal()">Fermer</button>
+        </div>
+    </div>
+    <div class="contenair">
+        <div class="content">
+            <nav>
+                <a href="#" class="logo"><img src="../logo pain.png" alt="logo DissertSchool"></a>
+                <div class="menu">
+                    <ul >
+                        <li><a href="../index.html" class="home"><ion-icon name="home-outline"></ion-icon>Acceuil</a></li>
+                        <li><a href="philosophie.html"><ion-icon name="bulb-outline"></ion-icon>Philosophie</a></li>
+                        <li><a href="litteraire.html"><i class="fa-regular fa-clipboard"></i>Litterature</a></li>
+                        <li style="position: relative;" class="metho active" onclick="addActive()">
+                            <a href="#"><i class="fa-solid fa-book"></i>Methodologie</a><ion-icon class="direct direct1 active" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho flex">
+                                <li><a href="methodologie1.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="methodologie2.html" style="color: #05BB85;"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;" class="metho1" onclick="addActive1()">
+                            <a href="#" ><i class="fa-solid fa-pen"></i>Arguments</a><ion-icon class="direct direct2" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho1 flex">
+                                <li><a href="argumentsPhilo.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="argumentLitte.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+               </div>
+                <div class="toggle_menu">
+                    &#9776;
+                </div>
+                <div class="toggle-theme" onclick="Changetheme()">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+            </nav>
+            <div class="content_text">
+                <div class="philosophie">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b> <h2>METHODOLOGIE <b style="color: #05bb85;">LITTERAIRE</b></h2>
+                    </div>
+                    <div class="developpement">
+                        <p>
+                            <span style="margin-left: 15px;"></span> Obtenir une note parfaite dans une dissertation littéraire dépend de plusieurs facteurs, dont la qualité de l'argumentation,
+                            la clarté de l'expression, l'originalité des idées, et la pertinence des références utilisées. Voici une méthodologie étape par étape qui pourrait t'aider à atteindre cet objectif :
+                        </p>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 1  :</span><b style="color: #05bb85;">  Compréhension approfondie du sujet :</b></p>
+                                <div class="btn-toggle" onclick="removeActive()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape">
+                               <p>
+                                 <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                 Lis attentivement le sujet et identifie les mots-clés.
+                               </p>
+                               <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                 Analyse le sujet pour comprendre ce qu'il demande (analyse, argumentation, comparaison, etc.).
+                              </p>
+                              <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                  Note les aspects principaux que tu devras aborder.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 2  :</span><b style="color: #05bb85;">  Recherche et sélection des références :</b></p>
+                                <div class="btn-toggle btn-toggle1" onclick="removeActive1()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape1">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Identifie les œuvres littéraires, les auteurs et les théories pertinents pour ton sujet.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Effectue des recherches pour trouver des citations, des analyses et des critiques qui soutiendront ta thèse.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Consulte des critiques, des analyses et des théories académiques pour enrichir ton argumentation.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Prends des notes détaillées sur les points clés que tu souhaites aborder dans ta dissertation.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 3  :</span><b style="color: #05bb85;">  Élaboration d'un plan détaillé solide :</b></p>
+                                <div class="btn-toggle btn-toggle2" onclick="removeActive2()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape2">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Structure ta dissertation en introduction, développement et conclusion.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Dans l'introduction, expose le sujet, énonce ta thèse et annonce les grandes lignes de ton argumentation.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Dans le développement, organise tes idées de manière logique en plusieurs paragraphes. Chaque paragraphe doit traiter d'un point spécifique en lien avec ta thèse.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Dans la conclusion, résume brièvement tes arguments et propose une ouverture ou une réflexion sur le sujet.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Assure-toi que chaque paragraphe contribue à soutenir ta thèse principale.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 4  :</span><b style="color: #05bb85;">  Rédaction précise et percutante :</b></p>
+                                <div class="btn-toggle btn-toggle3" onclick="removeActive3()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape3">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Utilise un langage précis, varié et approprié au registre littéraire. Utilise un langage formel et précis, en évitant les familiarités et les erreurs grammaticales.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Rédige chaque partie de ta dissertation en suivant le plan détaillé établi.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Intègre des citations littéraires pour appuyer tes arguments, en les analysant et les commentant dans le contexte de ta thèse.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Évite les répétitions et les longueurs superflues.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Introduis des idées originales et des analyses profondes qui démontrent ta compréhension du sujet.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 5  :</span><b style="color: #05bb85;">  Analyse critique des textes  :</b></p>
+                                <div class="btn-toggle btn-toggle4" onclick="removeActive4()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape4">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Relie chaque citation à ta thèse et explique son importance dans le contexte plus large de ton argumentation.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Développe des comparaisons ou des contrastes entre les textes, si nécessaire.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Assure-toi que la structure de ton argumentation est claire et cohérente.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 6  :</span><b style="color: #05bb85;"> Révision minutieuse  :</b></p>
+                                <div class="btn-toggle btn-toggle5" onclick="removeActive5()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape5">
+                                <p>
+                                    <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                    Relis attentivement ta dissertation pour détecter et corriger toute erreur de grammaire, de syntaxe ou d'orthographe.
+                                </p>
+                                <p>
+                                    <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                    Assure-toi que chaque paragraphe est bien développé et que les transitions entre les idées est fluide.
+                                </p>
+                                <p>
+                                    <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                    Vérifie que tes références sont correctement citées selon les normes académiques requises.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 7  :</span><b style="color: #05bb85;"> Originalité et engagement personnel :</b></p>
+                                <div class="btn-toggle btn-toggle6" onclick="removeActive6()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape6">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Ajoute une perspective personnelle et originale à ton argumentation.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Montre ton engagement avec les textes et les idées que tu présentes.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Développe des arguments novateurs qui dépassent les interprétations conventionnelles.
+                            </p>
+                            </div>
+                        </div>
+                        <p>
+                           <span style="margin-left: 15px;"></span> En suivant ces étapes avec rigueur et en mettant l'accent sur la qualité de ton argumentation, de ton analyse et de ta rédaction, tu augmenteras tes chances d'obtenir une note parfaite dans ta dissertation littéraire.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bodyfooter">
+            <div class="footer-content">
+                <h3> Contact </h3>
+                <div class="elements" style="height: 50%;">
+                    <p><i class="fa-solid fa-phone"> :</i><a href="tel:+23758193457">  658193457</a></p>
+                    <p><i class="fa-regular fa-envelope"> :</i><a href="mailto:trevorpayong@gmail.com"> trevorpayong@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h3>Commentaire</h3>
+                <p style=" height: 50%;display: flex;justify-content: center;align-items: center; gap: 7px;" class="stop" onclick="AddModal()">
+                    <i class="fa-solid fa-comment-dots" style="color: #000; text-decoration: none;"> :</i>
+                    <b style="color:#0000ee; text-decoration: underline; cursor: pointer;"> Envoyez un commentaire</b>
+                </p>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez nous</h3>
+                <div class="reseau" style="height: 50%; display: flex;justify-content: center;align-items: center;">
+                    <span class="facebook">
+                        <a href="https://web.facebook.com/profile.php?id=61561646186400&is_tour_completed" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                    <span class="instagram">
+                        <a href="https://www.instagram.com/school_dissert1?igsh=MTM3d2JobGxkemQx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 <b style="font-family: cursive;"> PAYONG INTELLECTUAL GROUPS</b> tout droit reserver </p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

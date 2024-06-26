@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDissert</title>
+    <link rel="stylesheet" href="methodologie.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/jpg" href="../logo entete.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="methodologie.js" defer></script>
+</head>
+<body>
+    <div class="vitre"></div>
+    <div class="vitrine"></div>
+    <div class="modal">
+        <div class="quitter" onclick="removeModal()">
+            &#215;
+        </div>
+        <div class="modal-head">
+            <div class="img">
+                <div class="logo-modal">
+                    <img src="../logo modal.png" alt="logo de DissertSchool">
+                </div>
+            </div>
+            <div class="title">
+                <h2>COMMENTAIRE</h2>
+            </div>
+        </div>
+        <div class="modal-body">
+            <p>
+                Salut cher utilisateur👋🏽. Pour toute critique, suggestion, difficulté ou incompréhension rencontrée apres exploitation du site, laissez nous un commentaire par 
+                <a href="mailto:payongtrevor@gmail.com" style="text-decoration: underline;">message mail</a>.
+            </p>
+        </div>
+        <div class="modal-fin">
+            <button onclick="removeModal()">Fermer</button>
+        </div>
+    </div>
+    <div class="contenair">
+        <div class="content">
+            <nav>
+                <a href="#" class="logo"><img src="../logo pain.png" alt="logo DissertSchool"></a>
+                <div class="menu">
+                    <ul >
+                        <li><a href="../index.html" class="home"><ion-icon name="home-outline"></ion-icon>Acceuil</a></li>
+                        <li><a href="philosophie.html"><ion-icon name="bulb-outline"></ion-icon>Philosophie</a></li>
+                        <li><a href="litteraire.html"><i class="fa-regular fa-clipboard"></i>Litterature</a></li>
+                        <li style="position: relative;" class="metho active" onclick="addActive()">
+                            <a href="#"><i class="fa-solid fa-book"></i>Methodologie</a><ion-icon class="direct direct1 active" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho flex">
+                                <li><a href="methodologie1.html" style="color: #05BB85;"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="methodologie2.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;" class="metho1" onclick="addActive1()">
+                            <a href="#" ><i class="fa-solid fa-pen"></i>Arguments</a><ion-icon class="direct direct2" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho1 flex">
+                                <li><a href="argumentsPhilo.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="argumentLitte.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+               </div>
+                <div class="toggle_menu">
+                    &#9776;
+                </div>
+                <div class="toggle-theme" onclick="Changetheme()">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+            </nav>
+            <div class="content_text">
+                <div class="philosophie">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b> <h2>METHODOLOGIE <b style="color: #05bb85;">PHILOSOPHIQUE</b></h2>
+                    </div>
+                    <div class="developpement">
+                        <p>
+                            La méthodologie d'une dissertation philosophique repose sur une série d'étapes essentielles pour analyser et argumenter
+                            de manière rigoureuse sur un problème philosophique donné. Voici une méthode générale que vous pouvez suivre :
+                        </p>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 1  :</span><b style="color: #05bb85;">  Compréhension de la question ou de la citation :</b></p>
+                                <div class="btn-toggle" onclick="removeActive()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape">
+                               <p>
+                                 <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                 Commencez par une lecture attentive de la question posée pour bien
+                                en saisir le sens et les implications.
+                               </p>
+                               <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Identifiez les concepts clés et les termes importants présents dans la question.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 2  :</span><b style="color: #05bb85;">  Recherche et documentation :</b></p>
+                                <div class="btn-toggle btn-toggle1" onclick="removeActive1()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape1">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Effectuez des recherches approfondies sur le sujet de la dissertation en
+                                consultant des ouvrages philosophiques, des articles académiques et d'autres sources pertinentes.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Prenez des notes sur les idées, les arguments et les théories qui pourraient être utiles pour répondre à la question.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 3  :</span><b style="color: #05bb85;">  Formulation d'une thèse :</b></p>
+                                <div class="btn-toggle btn-toggle2" onclick="removeActive2()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape2">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Développez une thèse claire et précise en réponse à la
+                                question posée. Celle-ci devrait exprimer votre position sur le problème philosophique discuté.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Assurez-vous que votre thèse est originale et qu'elle constitue une contribution significative au débat philosophique.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 4  :</span><b style="color: #05bb85;">  Construction du plan :</b></p>
+                                <div class="btn-toggle btn-toggle3" onclick="removeActive3()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape3">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Organisez vos idées en élaborant un plan détaillé pour votre dissertation. Celui-ci
+                                devrait comprendre une introduction, un développement en plusieurs parties et une conclusion.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Répartissez vos arguments de manière logique en les regroupant par thèmes ou par perspectives philosophiques.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 5  :</span><b style="color: #05bb85;">  Rédaction de l'introduction :</b></p>
+                                <div class="btn-toggle btn-toggle4" onclick="removeActive4()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape4">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Présentez le sujet de votre dissertation en introduisant la question posée et en exposant le contexte philosophique dans lequel elle s'inscrit.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Formulez votre thèse de manière claire et concise, en indiquant brièvement comment vous allez la défendre dans le développement de votre dissertation.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 6  :</span><b style="color: #05bb85;">  Développement de la dissertation :</b></p>
+                                <div class="btn-toggle btn-toggle5" onclick="removeActive5()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape5">
+                                <p>
+                                    <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                    Dans chaque partie de votre développement, commencez par une phrase d'introduction qui annonce le sujet de la section et relie celle-ci à la thèse générale de votre dissertation.
+                                </p>
+                                <p>
+                                    <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                    Développez vos arguments en analysant les idées philosophiques pertinentes, en fournissant des exemples concrets et en appuyant vos propos avec des références à des auteurs et des textes philosophiques.
+                                </p>
+                                <p>
+                                    <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                    Utilisez des transitions fluides entre les paragraphes pour assurer la cohérence et la progression logique de votre argumentation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 7  :</span><b style="color: #05bb85;">  Rédaction de la conclusion :</b></p>
+                                <div class="btn-toggle btn-toggle6" onclick="removeActive6()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape6">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Résumez brièvement les points principaux de votre dissertation et réaffirmez votre thèse.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Faites le bilan de vos analyses et proposez éventuellement des pistes de réflexion ou des ouvertures pour de futures recherches.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="etape">
+                            <div class="title">
+                                <p><span style="font-family: cursive;">ETAPE 8  :</span><b style="color: #05bb85;">  Révision et correction :</b></p>
+                                <div class="btn-toggle btn-toggle7" onclick="removeActive7()">
+                                    <ion-icon name="remove-outline" class="moin"></ion-icon>
+                                    <ion-icon name="add-outline" class="plus"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sous_etape sous_etape7">
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span> 
+                                Relisez attentivement votre dissertation pour corriger les fautes d'orthographe, de grammaire et de syntaxe.
+                            </p>
+                            <p>
+                                <span style="margin-left: 10px; margin-top: 225px; color: #05bb85;"><ion-icon name="arrow-forward-outline" ></ion-icon></span>
+                                Assurez-vous que votre argumentation est claire et cohérente, et que votre dissertation répond de manière satisfaisante à la question posée.
+                            </p>
+                            </div>
+                        </div>
+                        <p>
+                            En suivant cette méthodologie de manière méthodique, vous serez en mesure de rédiger une dissertation philosophique solide et bien argumentée.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bodyfooter">
+            <div class="footer-content">
+                <h3> Contact </h3>
+                <div class="elements" style="height: 50%;">
+                    <p><i class="fa-solid fa-phone"> :</i><a href="tel:+23758193457">  658193457</a></p>
+                    <p><i class="fa-regular fa-envelope"> :</i><a href="mailto:trevorpayong@gmail.com"> trevorpayong@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h3>Commentaire</h3>
+                <p style=" height: 50%;display: flex;justify-content: center;align-items: center; gap: 7px;" class="stop" onclick="AddModal()">
+                    <i class="fa-solid fa-comment-dots" style="color: #000; text-decoration: none;"> :</i>
+                    <b style="color:#0000ee; text-decoration: underline; cursor: pointer;"> Envoyez un commentaire</b>
+                </p>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez nous</h3>
+                <div class="reseau" style="height: 50%; display: flex;justify-content: center;align-items: center;">
+                    <span class="facebook">
+                        <a href="https://web.facebook.com/profile.php?id=61561646186400&is_tour_completed" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                    <span class="instagram">
+                        <a href="https://www.instagram.com/school_dissert1?igsh=MTM3d2JobGxkemQx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 <b style="font-family: cursive;"> PAYONG INTELLECTUAL GROUPS</b> tout droit reserver </p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

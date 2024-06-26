@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDissert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="argument.css">
+    <link rel="icon" type="image/jpg" href="../logo entete.png">
+    <link rel="stylesheet" href="footer.css">
+    <script src="argument.js" defer></script>
+</head>
+<body>
+    <div class="vitre"></div>
+    <div class="vitrine"></div>
+    <div class="modal">
+        <div class="quitter" onclick="removeModal()">
+            &#215;
+        </div>
+        <div class="modal-head">
+            <div class="img">
+                <div class="logo-modal">
+                    <img src="../logo modal.png" alt="logo de DissertSchool">
+                </div>
+            </div>
+            <div class="title">
+                <h2>COMMENTAIRE</h2>
+            </div>
+        </div>
+        <div class="modal-body">
+            <p>
+                Salut cher utilisateur👋🏽. Pour toute critique, suggestion, difficulté ou incompréhension rencontrée apres exploitation du site, laissez nous un commentaire par 
+                <a href="mailto:payongtrevor@gmail.com" style="text-decoration: underline;">message mail</a>.
+            </p>
+        </div>
+        <div class="modal-fin">
+            <button onclick="removeModal()">Fermer</button>
+        </div>
+    </div>
+    <div class="contenair">
+        <div class="content">
+            <nav>
+                <a href="#" class="logo"><img src="../logo pain.png" alt="logo DissertSchool"></a>
+                <div class="menu">
+                    <ul >
+                        <li><a href="../index.html" class="home"><ion-icon name="home-outline"></ion-icon>Acceuil</a></li>
+                        <li><a href="philosophie.html"><ion-icon name="bulb-outline"></ion-icon>Philosophie</a></li>
+                        <li><a href="litteraire.html"><i class="fa-regular fa-clipboard"></i>Litterature</a></li>
+                        <li style="position: relative;" class="metho" onclick="addActive()">
+                            <a href="#"><i class="fa-solid fa-book"></i>Methodologie</a><ion-icon class="direct direct1" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho flex">
+                                <li><a href="methodologie1.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="methodologie2.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;" class="metho1 active" onclick="addActive1()">
+                            <a href="#" ><i class="fa-solid fa-pen"></i>Arguments</a><ion-icon class="direct direct2 active" name="chevron-down-outline"></ion-icon>
+                            <ol class="sous-metho1 flex">
+                                <li><a href="argumentsPhilo.html" style="color: #05BB85;"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="argumentLitte.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+               </div>
+                <div class="toggle_menu">
+                    &#9776;
+                </div>
+                <div class="toggle-theme" onclick="Changetheme()">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+            </nav>
+            <div class="presentation">
+                <div class="image">
+                    <img src="cahier2.jpg" alt="">
+                </div>
+                <div class="texte">
+                   <div class="texte1">
+                    <div class="title">
+                        <h2>ARGUMENTS <b style="color:#05bb85;">PHILOSOPHIQUE</b></h2>
+                      </div>
+                      <div class="box-texte">
+                           <p>
+                               Connaître des arguments philosophiques renforce la pensée critique et la compréhension du monde, améliore les compétences de communication et de débat, stimule la créativité en encourageant l'exploration de nouvelles idées, et favorise l'empathie en comprenant les différentes perspectives. Ces compétences enrichissent la prise de décision, les interactions sociales et la construction d'une vision plus nuancée et inclusive de la réalité, conduisant à une vie plus épanouissante et enrichissante.
+                           </p>
+                      </div>
+                      <div class="button">
+                         <button type="button"><a href="#parcourir">PARCOURIR</a></button>
+                      </div>
+                   </div>
+                </div>
+            </div>
+            <div class="content-argument" id="parcourir">
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>L'IMPORTANCE DE LA <b style="color: #05bb85;">PHILOSOPHIQUE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>Connaître les arguments sur l'importance de la philosophie en tête favorise la pensée critique, élargit la perspective, renforce la capacité à débattre, stimule la réflexion créative et encourage l'empathie. Ces compétences enrichissent la prise de décision, les interactions sociales et la compréhension globale du monde.</p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Développement de la pensée critique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie encourage la pensée critique en incitant les individus à remettre en question les idées reçues, à analyser les arguments et à formuler des opinions éclairées plutôt que de simplement accepter ce qui leur est présenté.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Compréhension de soi-même et des autres : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En explorant des questions fondamentales sur la nature de l'existence, de la conscience et de la réalité, la philosophie permet aux individus de mieux se comprendre eux-mêmes ainsi que les motivations et les perspectives des autres.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Guidance éthique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie fournit un cadre pour réfléchir aux questions éthiques et morales, aidant ainsi les individus à prendre des décisions éclairées dans leur vie personnelle et professionnelle.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Exploration de la connaissance : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie examine les fondements de la connaissance, y compris la nature de la vérité, de la croyance et de la justification, ce qui est crucial pour comprendre les limites et les possibilités de notre compréhension du monde.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Élargissement des horizons intellectuels : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Étudier la philosophie expose les individus à une variété de perspectives sur des sujets tels que la politique, la religion, la science et l'art, élargissant ainsi leur compréhension du monde.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Favoriser la créativité et l'innovation : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie encourage la pensée imaginative en défiant les conventions et en encourageant les individus à envisager des idées et des solutions alternatives aux problèmes complexes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Renforcement de la résilience intellectuelle : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        L'étude de la philosophie expose les individus à des questions difficiles et à des débats complexes, les aidant à développer la résilience intellectuelle nécessaire pour faire face à l'incertitude et à l'ambiguïté.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Promotion du dialogue interculturel : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie transcende les frontières culturelles en explorant des questions universelles sur la nature humaine, permettant ainsi aux individus de s'engager dans un dialogue constructif avec des personnes de différentes cultures et traditions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Préparation à une vie enrichissante et épanouissante : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En encourageant la réflexion profonde sur le sens et le but de la vie, la philosophie aide les individus à développer une perspective qui les guide vers une vie plus enrichissante et épanouissante.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Contributions à la société : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les idées philosophiques ont façonné de manière significative les sociétés à travers l'histoire, de la démocratie athénienne à la Déclaration des droits de l'homme. En comprenant la philosophie, les individus peuvent contribuer de manière constructive à façonner l'avenir de la société.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>LA VALEUR DE LA <b style="color: #05bb85;">PHILOSOPHIQUE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>Connaître des arguments sur la valeur de la philosophie en tête enrichit la réflexion critique, élargit la perspective, renforce les compétences de communication, stimule la créativité et favorise l'empathie. Ces compétences améliorent la prise de décision, les interactions sociales et la compréhension globale du monde.</p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Épanouissement personnel : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie offre une voie vers la découverte de soi-même et de son propre sens de la vie, ce qui peut conduire à un plus grand sentiment de satisfaction et d'épanouissement personnel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Ouverture d'esprit : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En explorant une variété de perspectives sur des questions complexes, la philosophie aide à développer une ouverture d'esprit et une tolérance envers les points de vue différents des siens.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Développement de compétences analytiques : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        L'étude de la philosophie renforce les compétences analytiques en encourageant la capacité à analyser, évaluer et critiquer les arguments de manière logique et systématique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Prise de décision éclairée : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie fournit un cadre pour réfléchir de manière critique aux choix éthiques et moraux, ce qui permet de prendre des décisions éclairées dans tous les aspects de la vie.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Apprentissage continu : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie favorise la curiosité intellectuelle et encourage l'apprentissage continu tout au long de la vie en poussant les individus à remettre constamment en question et à approfondir leur compréhension du monde qui les entoure.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Évolution sociale et politique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les idées philosophiques ont souvent été à l'avant-garde du changement social et politique, en inspirant des mouvements pour la justice, l'égalité et la liberté à travers l'histoire.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Appréciation de la diversité culturelle : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En étudiant la philosophie, on découvre une richesse de traditions intellectuelles et culturelles provenant du monde entier, ce qui favorise une appréciation plus profonde de la diversité humaine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Réflexion sur le sens de la vie : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie offre un espace pour réfléchir aux questions existentielles sur le sens de la vie, la mort et le but de l'existence, ce qui peut conduire à une plus grande clarté et satisfaction dans la vie.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Encouragement de la créativité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En défiant les conventions et en encourageant la pensée imaginative, la philosophie stimule la créativité en permettant aux individus d'explorer des idées nouvelles et innovantes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Amélioration des relations humaines : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        En cultivant la capacité à comprendre et à apprécier les différentes perspectives, la philosophie favorise des interactions plus enrichissantes et des relations humaines plus profondes et significatives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>L'INUTILITÉ DE LA <b style="color: #05bb85;">PHILOSOPHIQUE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Connaître des arguments sur l'inutilité de la philosophie stimule le questionnement critique, renforce la capacité à défendre ses convictions, encourage l'innovation en remettant en question le statu quo, et souligne l'importance de la pragmatique dans la résolution des problèmes concrets.
+                            Aborder l'inutilité de la philosophie peut être une perspective intéressante. Voici dix arguments qui pourraient être avancés :
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Absence d'applications pratiques directes : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Contrairement à d'autres disciplines comme les sciences appliquées ou les technologies, la philosophie ne produit pas toujours des résultats tangibles ou des solutions concrètes aux problèmes du monde réel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Manque de consensus et de progrès : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie est souvent caractérisée par un manque de consensus sur des questions fondamentales et un progrès limité dans la résolution de ces questions, ce qui peut conduire à des débats interminables sans aboutissement.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Difficulté à mesurer l'efficacité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Il est difficile de mesurer l'efficacité ou l'impact de la philosophie de manière objective, ce qui peut remettre en question son utilité dans des contextes où des résultats concrets sont attendus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Éloignement de la réalité quotidienne : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certaines branches de la philosophie, en particulier la métaphysique et l'épistémologie, peuvent sembler déconnectées de la réalité quotidienne et des préoccupations pratiques des gens ordinaires.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Perception d'abstraction excessive : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie est parfois critiquée pour son langage dense et abstrait, ce qui peut la rendre inaccessible à de nombreuses personnes et laisser penser qu'elle n'a pas de pertinence dans la vie quotidienne.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Potentiel de stérilité intellectuelle : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        L'accent mis sur la spéculation intellectuelle et la théorie abstraite peut parfois conduire à une stérilité intellectuelle, où les discussions philosophiques semblent éloignées des préoccupations concrètes et des défis du monde réel.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Pas de consensus sur les réponses : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les questions philosophiques fondamentales, telles que celles sur la nature de la réalité ou de la morale, n'ont souvent pas de réponses claires et définitives, ce qui peut conduire à une impression d'inutilité.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Déconnexion avec le progrès humain : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Certains pourraient soutenir que la philosophie a peu contribué au progrès humain par rapport à d'autres disciplines telles que la science, la technologie ou la médecine, qui ont apporté des avancées concrètes dans la vie des gens.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Substitution de l'action par la réflexion : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Une trop grande préoccupation pour la réflexion philosophique pourrait potentiellement conduire à une inaction, où les individus passent plus de temps à réfléchir sur les problèmes plutôt qu'à agir pour les résoudre.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Désintérêt généralisé : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Dans de nombreuses sociétés modernes, il y a un désintérêt généralisé pour la philosophie, avec un nombre croissant de personnes considérant qu'elle est obsolète ou sans pertinence dans un monde dominé par la technologie et les sciences appliquées.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>LA nature DE LA <b style="color: #05bb85;">PHILOSOPHIQUE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                          Connaître des arguments sur la nature de la philosophie clarifie les fondements de la pensée humaine, encourage l'exploration des grandes questions existentielles, développe la capacité à remettre en question les croyances et à comprendre les multiples perspectives, favorisant ainsi une pensée critique et ouverte.
+                          La nature de la philosophie est un sujet riche et complexe. Voici dix arguments pour expliquer cette nature :
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Quête de la sagesse : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie tire son nom du grec "philosophia", qui signifie littéralement "amour de la sagesse". Elle se concentre sur la recherche de la sagesse et la compréhension des questions fondamentales sur la vie, la connaissance, la vérité, l'éthique et la réalité.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Méthode d'investigation rationnelle : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie utilise la raison, la logique et l'argumentation pour analyser et évaluer des concepts et des idées, en cherchant à atteindre une compréhension plus profonde du monde et de l'expérience humaine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Interrogation des présupposés : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie remet en question les présupposés et les croyances implicites qui sous-tendent nos façons de penser et d'agir, cherchant à les examiner de manière critique et à les justifier rationnellement.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Pluralité de domaines d'étude : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie englobe une variété de domaines d'étude, notamment la métaphysique (la nature de la réalité), l'épistémologie (la nature de la connaissance), l'éthique (la morale), la logique (la validité des arguments), et l'esthétique (la nature de la beauté et de l'art).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Analyse des concepts fondamentaux : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie examine les concepts fondamentaux tels que l'existence, la vérité, la justice et la liberté, en cherchant à clarifier leur signification et leur importance dans notre compréhension du monde.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Dialogue et débat : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie encourage le dialogue et le débat ouverts sur des questions controversées et complexes, en reconnaissant la diversité des perspectives et en cherchant à parvenir à une compréhension plus complète à travers l'échange d'idées.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Continuité avec l'histoire intellectuelle : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie s'inscrit dans une tradition intellectuelle ancienne qui remonte à l'Antiquité et qui a évolué au fil du temps, mais qui reste pertinente pour les questions contemporaines.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Quête de sens et de valeurs : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie explore les questions de sens et de valeurs, en cherchant à comprendre ce qui donne un sens à la vie et comment nous devrions vivre de manière juste et éthique.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Engagement avec d'autres disciplines : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie interagit avec d'autres disciplines académiques, telles que les sciences, les sciences humaines, et les arts, en offrant une perspective critique et conceptuelle sur leurs méthodes et leurs résultats.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Ouverture à l'incertitude et à la réflexion critique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie reconnaît l'incertitude inhérente à la compréhension humaine et encourage la réflexion critique sur nos propres croyances et convictions, en reconnaissant la nécessité de rester ouvert au doute et à la remise en question.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>Le rôle DE LA <b style="color: #05bb85;">PHILOSOPHIQUE</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloremque facere ea quod non sint exercitationem veritatis omnis delectus rem dolores fuga beatae perspiciatis accusamus quaerat, vel cupiditate sequi natus. Facilis ratione veniam illo culpa modi sed inventore iste, eligendi qui nostrum eaque cum rerum voluptatem! Architecto aperiam rem doloremque.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Questionner l'existence et la réalité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie offre un cadre pour remettre en question les fondements de notre existence et de la réalité, nous permettant ainsi de mieux comprendre qui nous sommes et ce qui nous entoure.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Développer la pensée critique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie encourage le développement de la pensée critique en nous incitant à remettre en question les idées reçues et à analyser les arguments de manière rigoureuse.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Explorer les valeurs et l'éthique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie nous aide à explorer les questions éthiques et morales, en nous permettant de réfléchir sur ce qui est juste et bon dans nos actions et nos décisions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Comprendre la connaissance et la vérité : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie examine la nature de la connaissance et de la vérité, nous aidant à comprendre comment nous justifions nos croyances et ce qui constitue une connaissance fiable.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Stimuler la créativité et l'imagination : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie encourage la pensée imaginative en nous incitant à envisager des idées et des perspectives alternatives sur des questions complexes et fondamentales.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Promouvoir le dialogue et la tolérance  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie favorise le dialogue et la discussion ouverts, en nous aidant à comprendre et à respecter les points de vue différents des nôtres.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Influencer le changement social et politique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        Les idées philosophiques ont souvent joué un rôle central dans les mouvements de changement social et politique, en inspirant des idéaux de justice, d'égalité et de liberté.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Encourager la recherche de sens et de but : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie nous aide à explorer les grandes questions de sens et de but dans la vie, nous permettant ainsi de vivre de manière plus réfléchie et intentionnelle.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Élargir notre compréhension du monde  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie élargit notre compréhension du monde en nous exposant à une variété de perspectives sur des questions fondamentales telles que la nature de la réalité, de l'existence et de la conscience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Contribuer à notre bien-être mental et émotionnel : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie peut contribuer à notre bien-être mental et émotionnel en nous aidant à réfléchir sur nos pensées et nos émotions, et en nous permettant de développer une perspective plus saine et équilibrée sur la vie.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arguments">
+                    <div class="titre">
+                        <b style="color: #05bb85; font-size: 1.4rem; margin-right: 7px;"><i class="fa-solid fa-share"></i></b><h2>Le rapport entre  <b style="color: #05bb85;">PHILOSOPHIQUE</b> & <b style="color: #05bb85;">science</b></h2>
+                    </div>
+                    <div class="content-arg">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloremque facere ea quod non sint exercitationem veritatis omnis delectus rem dolores fuga beatae perspiciatis accusamus quaerat, vel cupiditate sequi natus. Facilis ratione veniam illo culpa modi sed inventore iste, eligendi qui nostrum eaque cum rerum voluptatem! Architecto aperiam rem doloremque.
+                        </p>
+                        <div class="box">
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 1 : </span><b style="color: #05bb85;"> Fondements épistémologiques communs : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie et la science partagent des préoccupations épistémologiques communes, telles que la nature de la connaissance, la méthodologie de la recherche et la validité des théories.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 2 : </span><b style="color: #05bb85;"> Méthode scientifique et rationalité philosophique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La science repose sur la méthode scientifique, qui implique l'observation, l'expérimentation et la formulation de théories testables. La philosophie examine la rationalité de cette méthode et ses implications philosophiques.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 3 : </span><b style="color: #05bb85;"> Développement historique interconnecté : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La science moderne a émergé du contexte philosophique, et de nombreux scientifiques célèbres étaient également des philosophes, tels que Descartes, Newton et Einstein.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg active">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 4 : </span><b style="color: #05bb85;"> Réflexion sur les fondements de la science : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie de la science interroge les fondements des disciplines scientifiques, y compris leur ontologie (la nature de la réalité étudiée) et leur épistémologie (la nature de la connaissance scientifique).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 5 : </span><b style="color: #05bb85;"> Éthique de la recherche scientifique : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie éthique examine les implications morales de la recherche scientifique, en mettant en lumière les questions éthiques liées à la manipulation génétique, à l'intelligence artificielle et à d'autres avancées technologiques.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 6 : </span><b style="color: #05bb85;"> Théories métaphysiques et scientifiques  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La métaphysique philosophique aborde des questions sur la nature de la réalité, telles que l'existence du temps, de l'espace et de la causalité, qui peuvent influencer les théories scientifiques.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 7 : </span><b style="color: #05bb85;"> Relations entre science et religion : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie de la religion examine les relations entre science et religion, en abordant des questions telles que la compatibilité entre la foi et la raison et les limites de la connaissance humaine.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 8 : </span><b style="color: #05bb85;"> Interprétation des résultats scientifiques : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie de la science aide à interpréter les résultats scientifiques en mettant en évidence les présuppositions théoriques et les biais méthodologiques qui peuvent influencer notre compréhension des données.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 9 : </span><b style="color: #05bb85;"> Limites et frontières de la science  : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La philosophie réfléchit aux limites et aux frontières de la science, en explorant des questions telles que la capacité de la science à répondre à toutes les questions humaines et les domaines où d'autres formes de savoir peuvent être nécessaires.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-arg">
+                                <div class="sous-titre">
+                                    <p><span style="font-family: cursive;">ARG 10 : </span><b style="color: #05bb85;"> Dialogue interdisciplinaire : </b></p>
+                                    <div class="btn-toggle">
+                                        <ion-icon name="chevron-down-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <div class="explication">
+                                    <p>
+                                        <ion-icon name="arrow-forward-outline" style="color: #05bb85;"></ion-icon>
+                                        La collaboration entre la philosophie et la science favorise un dialogue interdisciplinaire fructueux, permettant aux scientifiques d'examiner les implications philosophiques de leur travail et aux philosophes d'enrichir leur réflexion avec des connaissances scientifiques actuelles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <footer>
+        <div class="bodyfooter">
+            <div class="footer-content">
+                <h3> Contact </h3>
+                <div class="elements" style="height: 50%;">
+                    <p><i class="fa-solid fa-phone"> :</i><a href="tel:+23758193457">  658193457</a></p>
+                    <p><i class="fa-regular fa-envelope"> :</i><a href="mailto:trevorpayong@gmail.com"> trevorpayong@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h3>Commentaire</h3>
+                <p style=" height: 50%;display: flex;justify-content: center;align-items: center; gap: 7px;" class="stop" onclick="AddModal()">
+                    <i class="fa-solid fa-comment-dots" style="color: #000; text-decoration: none;"> :</i>
+                    <b style="color:#0000ee; text-decoration: underline; cursor: pointer;"> Envoyez un commentaire</b>
+                </p>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez nous</h3>
+                <div class="reseau" style="height: 50%; display: flex;justify-content: center;align-items: center;">
+                    <span class="facebook">
+                        <a href="https://web.facebook.com/profile.php?id=61561646186400&is_tour_completed" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                    <span class="instagram">
+                        <a href="https://www.instagram.com/school_dissert1?igsh=MTM3d2JobGxkemQx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 <b style="font-family: cursive;"> PAYONG INTELLECTUAL GROUPS</b> tout droit reserver </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolDissert</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/jpg" href="logo entete.png">
+    <link rel="stylesheet" href="sous/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="vitre"></div>
+    <div class="vitrine"></div>
+    <div class="modal">
+        <div class="quitter" onclick="removeModal()">
+            &#215;
+        </div>
+        <div class="modal-head">
+            <div class="img">
+                <div class="logo-modal">
+                    <img src="logo modal.png" alt="logo de DissertSchool">
+                </div>
+            </div>
+            <div class="title">
+                <h2>COMMENTAIRE</h2>
+            </div>
+        </div>
+        <div class="modal-body">
+            <p>
+                Salut cher utilisateur👋🏽. Pour toute critique, suggestion, difficulté ou incompréhension rencontrée apres exploitation du site, 
+                laissez nous un commentaire par 
+                <a href="mailto:payongtrevor@gmail.com" style="text-decoration: underline;">message mail</a>.
+            </p>
+        </div>
+        <div class="modal-fin">
+            <button onclick="removeModal()">Fermer</button>
+        </div>
+    </div>
+    <div class="contenair">
+        <div class="content">
+            <nav>
+                <a href="#" class="logo"> <img src="logo pain.png" alt="logo"></a>
+               <div class="menu">
+                    <ul >
+                        <li><a href="#" class="home"><ion-icon name="home-outline"></ion-icon>Acceuil</a></li>
+                        <li><a href="sous/philosophie.html"><ion-icon name="bulb-outline"></ion-icon>Philosophie</a></li>
+                        <li><a href="sous/litteraire.html"><i class="fa-regular fa-clipboard"></i>Litterature</a></li>
+                        <li style="position: relative;" class="metho" onclick="addActive()">
+                            <a href="#"><i class="fa-solid fa-book"></i>Methodologie</a>
+                            <ol class="sous-metho flex">
+                                <li><a href="sous/methodologie1.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="sous/methodologie2.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                        <li style="position: relative;" class="metho1"  onclick="addActive1()">
+                            <a href="#"><i class="fa-solid fa-pen"></i>Arguments</a>
+                            <ol class="sous-metho1 flex">
+                                <li><a href="sous/argumentsPhilo.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Philosophique</a></li>
+                                <li><a href="sous/argumentLitte.html"><i class="fa-solid fa-share" style="font-size: 60%; color: #05BB85;"></i>Litteraire</a></li>
+                            </ol>
+                        </li>
+                    </ul>
+               </div>
+                <div class="toggle_menu">
+                    &#9776;
+                </div>
+                <div class="toggle-theme" onclick="Changetheme()">
+                    <ion-icon name="moon-outline"></ion-icon>
+                </div>
+            </nav>
+            <div class="home-body">
+                <div class="texte">
+                    <div class="texte2">
+                        <div class="texte3">
+                            <h3 style="z-index: -1;"><span style="color: #05BB85; font-size: 90%;transform: translateY(2px); margin-left: 5px;" class="text2 auto-typing"> </span></h3>
+                            <div class="commentaire">
+                                <p>
+                                    La maîtrise de la dissertation offre de nombreux avantages. Tout d'abord, elle développe la pensée critique et la capacité à formuler des arguments cohérents et persuasifs.
+                                    Elle renforce également les compétences en recherche, en analyse et en synthèse d'informations. La pratique de la dissertation favorise une meilleure expression écrite et la capacité à structurer ses idées de manière claire et organisée. De plus, elle encourage la réflexion profonde sur des sujets variés, ce qui contribue à l'enrichissement intellectuel et à la compréhension du monde qui nous entoure.
+                                    Enfin, elle prépare efficacement à la communication efficace dans divers contextes académiques et professionnels.
+                                </p>
+                            </div>
+                            <button>Bienvenue</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="cahi.jpg" alt=" cahier bleu">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <footer>
+        <div class="bodyfooter">
+            <div class="footer-content">
+                <h3> Contact </h3>
+                <div class="elements" style="height: 50%;">
+                    <p><i class="fa-solid fa-phone"> :</i><a href="tel:+237658193457">  658193457</a></p>
+                    <p><i class="fa-regular fa-envelope"> :</i><a href="mailto:trevorpayong@gmail.com"> trevorpayong@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <h3>Commentaire</h3>
+                <p style=" height: 50%;display: flex;justify-content: center;align-items: center; gap: 7px;" class="stop" onclick="AddModal()">
+                    <i class="fa-solid fa-comment-dots" style="color: #000; text-decoration: none;"> :</i>
+                    <b style="color:#0000ee; text-decoration: underline; cursor: pointer;"> Envoyez un commentaire</b>
+                </p>
+            </div>
+            <div class="footer-content">
+                <h3>Suivez nous</h3>
+                <div class="reseau" style="height: 50%; display: flex;justify-content: center;align-items: center;">
+                    <span class="facebook">
+                        <a href="https://web.facebook.com/profile.php?id=61561646186400&is_tour_completed" target="_blank" ><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                    <span class="instagram">
+                        <a href="https://www.instagram.com/school_dissert1?igsh=MTM3d2JobGxkemQx " target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 <b style="font-family: cursive;"> PAYONG INTELLECTUAL GROUPS</b> tout droit reserver </p>
+        </div>
+    </footer>
+</body>
+<script>
+    let menu = document.querySelector(".menu");
+    let sous_metho = document.querySelector(".sous-metho");
+    let sous_metho1 = document.querySelector(".sous-metho1");
+    let vitre = document.querySelector(".vitre");
+    let toggle_menu = document.querySelector(".toggle_menu");
+    
+    toggle_menu.addEventListener("click",(es)=>{
+        menu.classList.toggle("active");
+        vitre.classList.toggle("active");
+        es.stopPropagation()
+    })
+    menu.addEventListener("click",(e)=>{
+        e.stopPropagation()
+    })
+    document.body.addEventListener("click",()=>{
+        if (menu.className.includes("active") || vitre.className.includes("active")) {
+            menu.classList.remove("active");
+            vitre.classList.remove("active");
+        }
+        if (sous_metho.className.includes("active")) {
+            sous_metho.classList.remove("active")
+        }
+        if (sous_metho1.className.includes("active")) {
+            sous_metho1.classList.remove("active")
+        }
+    })
+    function addActive() {
+        sous_metho.classList.toggle("active")
+    }
+    sous_metho.addEventListener("click",(ez)=>{
+        ez.stopPropagation()
+    })
+    sous_metho1.addEventListener("click",(ez)=>{
+        ez.stopPropagation()
+    })
+    function addActive1() {
+        sous_metho1.classList.toggle("active")
+    }
+</script>
+</html>
